@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 
 import {createParticipant} from "../../actions";
 import ParticipantForm from "./ParticipantForm";
-import {ENVIRONMENTAL_EXPOSURES_LIST, GENE_MUTATIONS_LIST} from "../../apis/participantsAPI";
+import {ENVIRONMENTAL_EXPOSURES_LIST, GENE_MUTATIONS_LIST} from "../../apis/participantsMockAPI";
 
 class ParticipantCreate extends React.Component {
     onSubmit = formValues => {

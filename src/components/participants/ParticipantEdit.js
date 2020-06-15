@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import ParticipantForm from "./ParticipantForm";
 import {editParticipant, fetchParticipant} from "../../actions";
-import {ENVIRONMENTAL_EXPOSURES_LIST, GENE_MUTATIONS_LIST} from "../../apis/participantsAPI";
+import {ENVIRONMENTAL_EXPOSURES_LIST, GENE_MUTATIONS_LIST} from "../../apis/participantsMockAPI";
 import LoadingParticipant from "./LoadingParticipant";
 
 class ParticipantEdit extends React.Component {
