@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import ParticipantForm from "./ParticipantForm";
 import {editParticipant, fetchParticipant} from "../../actions";
 import {ENVIRONMENTAL_EXPOSURES_LIST, GENE_MUTATIONS_LIST} from "../../apis/participantsAPI";
+import LoadingParticipant from "./LoadingParticipant";
 
 class ParticipantEdit extends React.Component {
     componentDidMount() {
@@ -17,7 +18,7 @@ class ParticipantEdit extends React.Component {
 
     render() {
         if (!this.props.participant) {
-            return <div>Loading...</div>
+            return <LoadingParticipant />
         }
 
         return (

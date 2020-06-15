@@ -42,7 +42,7 @@ class ParticipantDelete extends React.Component {
     render() {
         return (
             <Modal
-                title="Delete Stream"
+                title="Delete Participant"
                 content={this.renderContent()}
                 actions={this.renderActions()}
                 onDismiss={() => history.push('/')}
