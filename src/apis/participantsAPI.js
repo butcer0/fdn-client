@@ -5,8 +5,8 @@ const DEFAULT_PARTICIPANT = {
     name: 'Bob',
     age: 42,
     hasSiblings: false,
-    envExposures: [],
-    geneMutations: [],
+    envExposures: ['Mold', 'Pest and Pet Allergens', 'Pesticides', 'Phthalates'],
+    geneMutations: ['FGD1', 'EDNRB', 'LMBR1'],
     reviewedStatus: REVIEWED_STATUS_NOT_REVIEWED
 };
 
@@ -16,8 +16,8 @@ const DEFAULT_PARTICIPANTS =
         name: 'Bob Taffert',
         age: 42,
         hasSiblings: false,
-        envExposures: [],
-        geneMutations: [],
+        envExposures: ['Mold', 'Pest and Pet Allergens', 'Pesticides', 'Phthalates'],
+        geneMutations: ['FGD1', 'EDNRB', 'LMBR1'],
         reviewedStatus: REVIEWED_STATUS_NOT_REVIEWED
     },
     {
