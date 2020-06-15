@@ -58,7 +58,7 @@ class ParticipantForm extends React.Component {
     };
 
     onSubmit = formValues => {
-        formValues = { ...formValues, reviewedStatus: REVIEWED_STATUS_NOT_REVIEWED }
+        formValues = {...formValues, reviewedStatus: REVIEWED_STATUS_NOT_REVIEWED}
         this.props.onSubmit(formValues);
     };
 
