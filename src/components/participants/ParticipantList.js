@@ -29,9 +29,9 @@ class ParticipantList extends React.Component {
             return (
                 <div className="item" key={participant.id}>
                     {this.renderAdmin(participant)}
-                    <i className="large middle aligned icon camera"/>
+                    <i className="large middle aligned icon user circle"/>
                     <div className="content">
-                        <Link to={`/streams/${participant.id}`} className="header">
+                        <Link to={`/participants/${participant.id}`} className="header">
                             {participant.name}
                         </Link>
                         <div className="description">Age: {participant.age}</div>
