@@ -26,7 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="seven wide column">
-                        <h5 className="ui header">Found Diagnosis Network - Erik Butcher</h5>
+                        <h5 className="ui header">© Erik Butcher {new Date().getFullYear()}</h5>
                     </div>
                 </div>
             </div>

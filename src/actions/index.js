@@ -1,4 +1,4 @@
-import {DEFAULT_PARTICIPANT} from "../apis/participantsAPI";
+import {DEFAULT_PARTICIPANT, DEFAULT_PARTICIPANTS} from "../apis/participantsAPI";
 import {
     CREATE_PARTICIPANT,
     DELETE_PARTICIPANT,
@@ -17,7 +17,7 @@ export const createParticipant = formValues => async (dispatch, getState) => {
 };
 
 export const fetchParticipants = () => async dispatch => {
-    const response = { data: DEFAULT_PARTICIPANT };
+    const response = { data: DEFAULT_PARTICIPANTS };
     dispatch({ type: FETCH_PARTICIPANTS, payload: response.data })
 };
 
