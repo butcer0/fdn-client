@@ -19,7 +19,7 @@ export default (state = {}, action) => {
         case EDIT_PARTICIPANT:
             return { ...state, [action.payload.id]: action.payload  }
         case DELETE_PARTICIPANT:
-            return _.omit()
+            return _.omit(state, action.payload)
         default:
             return state;
     }

@@ -3,8 +3,9 @@ import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className="ui vertical footer segment ">
+        <div className="ui vertical footer segment">
             <div className="ui container">
+                <br />
                 <div className="ui stackable divided equal height stackable grid">
                     <div className="three wide column">
                         <h4 className="ui header">About</h4>
@@ -25,8 +26,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="seven wide column">
-                        <h5 className="ui header">Found Diagnosis Network - Erik Butcher
-                            © {new Date().getFullYear()}</h5>
+                        <h5 className="ui header">Found Diagnosis Network - Erik Butcher</h5>
                     </div>
                 </div>
             </div>
