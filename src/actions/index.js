@@ -1,4 +1,5 @@
 import {DEFAULT_PARTICIPANT, DEFAULT_PARTICIPANTS} from "../apis/participantsAPI";
+import history from '../history';
 import {
     CREATE_PARTICIPANT,
     DELETE_PARTICIPANT,
@@ -14,6 +15,7 @@ export const createParticipant = formValues => async (dispatch, getState) => {
     nextParticipantId++;
     const response = {data: formValues};
     dispatch({type: CREATE_PARTICIPANT, payload: response.data});
+    history.push('/');
 };
 
 export const fetchParticipants = () => async dispatch => {
@@ -30,8 +32,10 @@ export const editParticipant = (id, formValues) => async dispatch => {
     formValues = {id: 0, ...formValues};
     const response = {data: formValues};
     dispatch({type: EDIT_PARTICIPANT, payload: response.data});
+    history.push('/');
 };
 
 export const deleteParticipant = id => async dispatch => {
     dispatch({type: DELETE_PARTICIPANT, payload: id});
+    history.push('/');
 };

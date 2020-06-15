@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Switch, BrowserRouter} from "react-router-dom";
+import {Route, Switch, Router} from "react-router-dom";
 
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
@@ -10,11 +10,12 @@ import {
     ParticipantList,
     ParticipantShow
 } from "./participants";
+import history from '../history';
 
 const App = () => {
     return (
         <div className="ui container">
-            <BrowserRouter>
+            <Router history={history}>
                 <div>
                     <Header/>
                     <Switch>
@@ -26,7 +27,7 @@ const App = () => {
                     </Switch>
                     <Footer/>
                 </div>
-            </BrowserRouter>
+            </Router>
         </div>
     )
 }
